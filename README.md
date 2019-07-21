@@ -57,7 +57,9 @@ public:
 erase(position);删除position处的一个字符(position是个string类型的迭代器)    
 erase(pos,n); 删除从pos开始的n个字符，比如erase(0,1)就是删除第一个字符     
 erase(first,last);删除从first到last之间的字符（first和last都是迭代器）   
+
 ---
+
 解法二：
 ```c++
 return distance(nums.begin(), unique(nums.begin(), nums.end()));
