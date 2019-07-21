@@ -1,7 +1,7 @@
-# Leetcode_beginning
+## Leetcode_beginning
 It's my first anwering question on leetcode,emmmm..
 
-# leetcode.26
+# algorithm_leetcode.26
 Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.
 
 Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
@@ -59,7 +59,7 @@ erase(pos,n); 删除从pos开始的n个字符，比如erase(0,1)就是删除第�
 erase(first,last);删除从first到last之间的字符（first和last都是迭代器）   
 
 ---
-
+     
 解法二：
 ```c++
 return distance(nums.begin(), unique(nums.begin(), nums.end()));
@@ -88,4 +88,4 @@ public:
     }
 };
 ```
-    
+记得严魏敏老师讲过双指针的用法，暂时消化不了。显摆上来，经典解法望日后吃掉。
