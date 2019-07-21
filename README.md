@@ -13,7 +13,8 @@ Your function should return length = 2, with the first two elements of nums bein
 MY code  is following:
 
 
-***class Solution {
+***
+class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
         if (nums.size()==0 )return 0;
