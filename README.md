@@ -11,8 +11,7 @@ Given nums = [1,1,2],
 
 Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively.
 MY code  is following:
-
-
+---
 ```c++
 class Solution {
 public:
@@ -30,7 +29,9 @@ public:
         }
         return index;
     }
-};```
+};
+```
+---
 不得不说自己真是菜鸡一个，不要提什么科不科班出身？你努不努力，拉出来遛遛。Leecode第一次难度级别：easy
 高手自在人间，看完讨论区懵了，一口一个卧槽/
     
