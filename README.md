@@ -13,7 +13,7 @@ Your function should return length = 2, with the first two elements of nums bein
 MY code  is following:
 
 
-***
+```c++
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
@@ -31,3 +31,4 @@ public:
         return index;
     }
 };
+```
