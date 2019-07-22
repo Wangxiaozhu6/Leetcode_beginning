@@ -1,4 +1,4 @@
-# Leetcode_beginning
+# ARTS_beginning
 It's my first anwering question on leetcode,emmmm..
 
 ## algorithm
