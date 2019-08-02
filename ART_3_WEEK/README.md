@@ -103,6 +103,51 @@ public:
 };
 //用到了无序容器set，通过find()语句``(dict.find(num) == dict.end()``判断是否会添加重复元素。
 ```
+## 3.找出只有一个的元素
+```
+给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。    
+说明：
+你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？
+示例 1:
+输入: [2,2,1]
+输出: 1
+示例 2:
+输入: [4,1,2,1,2]
+输出: 4
+```
+```c++
+//根据消化的强大异或功能表现出来：
+class Solution {
+public:
+    int singleNumber(vector<int>& nums) {
+        
+        int result=0;
+        for(int i:nums)
+            result^=i;
+        return result;
+        
+    }
+};
+//哈希集这种思路也值得借鉴！
+
+若第一次出现，插入哈希集；
+第二次出现，冲哈希集内删除；
+最后剩下的就是那个只出现一次的数字。
+class Solution {
+public:
+    int singleNumber(vector<int>& nums) {
+        unordered_set<int> bobo;
+        int ans;
+        for(auto i : nums){
+            if(bobo.count(i))   bobo.erase(i);
+            else    bobo.insert(i);
+        }
+        for(auto j : bobo)  ans = j;
+        return ans;
+    }
+};
+
+```
 # Share
 # Review
 # Tip
